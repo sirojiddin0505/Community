@@ -1,10 +1,11 @@
-import React from 'react'
+import About from '@/pages/about/About'
+import Home from '@/pages/home/Home'
 
 const HomePage = () => {
   return (
-    <div className='container mx-auto'>
-      homePage
-    </div>
+    <>
+    <Home/>
+    </>
   )
 }
 
