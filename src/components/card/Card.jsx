@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Card = ({ img, title, desc }) => {
   return (
-    <div className="rounded-lg shadow-md max-w-sm">
+    <div className="rounded-lg shadow-md max-w-sm bg-white">
        <div className='overflow-hidden rounded-lg hover:bg-[black/70]'>
            <Image src={img} alt={title} width={400} height={250} className="w-full h-60 object-cover transition-transform duration-300 ease-in-out hover:scale-110 "/>
        </div> 

@@ -8,6 +8,8 @@ import homepage9 from '../../public/homePage9.svg'
 import homepage10 from '../../public/homePage10.svg'
 import homepage11 from '../../public/homePage11.svg'        
 import homepage12 from '../../public/homePage12.svg'        
+import homepage14 from '../../public/homePage14.svg'        
+import homepage15 from '../../public/homePage15.svg'        
 import Card from '@/components/card/Card'
 import { cardData } from '@/components/data/data'
 
@@ -21,7 +23,7 @@ const Home = () => {
                     <h2 className='text-[#1D3444] text-[45px] leading-[50px] lg:text-[56px] lg:leading-[60px] font-[600] max-w-[576px] py-6 lg:pt-20 '>Prosper with our bespoke solutions</h2>
                     <p className='text-[#5B5B5B] text-[18px] font-[500] max-w-[571px] pt-4 pb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
                     <span className='flex gap-10 items-center justify-center mx-auto lg:mx-0 lg:justify-start'>
-                        <button  className='font-[600] text-[18px] text-[#ffffff] px-5 py-3 cursor-pointer bg-[#F58A07] rounded-[31px] hover:opacity-80 active:scale-90 duration-325'>See Our Services</button>
+                        <button className='font-[600] text-[18px] text-[#ffffff] px-5 py-3 cursor-pointer bg-[#F58A07] rounded-[31px] hover:opacity-80 active:scale-90 duration-325'>See Our Services</button>
                         <a className='text-[#1D3444] font-[500]'>See All Services</a>
                     </span>
                     <p className='text-[#39414980] text-[18px] py-8'>Worked with 100+ Companies</p>
@@ -102,16 +104,52 @@ const Home = () => {
                     <button className='bg-[#EDF7FF] py-2 px-6 rounded-[31px] font-[600] text-[#0632554D] border border-[#A8BCCC] cursor-pointer hover:border-white hover:bg-[white] hover:text-[#F58A07]'>Digitalization</button>
                     <button className='bg-[#EDF7FF] py-2 px-6 rounded-[31px] font-[600] text-[#0632554D] border border-[#A8BCCC] cursor-pointer hover:border-white hover:bg-[white] hover:text-[#F58A07]'>Risk assessment</button>
                 </span>
-                <div>
-                    <div>
-                        <h2>Helping clients with research and strategy for their business</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
-                        <p>Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit amet eros blan esque. </p>
-                        <a>See all services →</a>
+                <div className='flex gap-8 items-center flex-col-reverse md:grid md:grid-cols-2'>
+                    <div className='text-center md:text-start'>
+                        <h2 className='text-[#0D1317] text-[48px] font-[600] max-w-[572px] leading-[56px] pb-8'>Helping clients with research and strategy for their business</h2>
+                        <p className='text-[#5B5B5B] font-[500] max-w-[510px] pt-6 pb-3 mx-auto md:mx-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+                        <p className='text-[#5B5B5B] font-[500] max-w-[510px] pb-12 mx-auto md:mx-0'> Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit amet eros blan esque. </p>
+                        <a href='#' className='text-[#F58A07]'>See all services →</a>
                     </div>
                     <div>
-                        <Image src={homepage12} alt='rasm bor'/>
+                        <Image src={homepage12} alt='rasm bor' className='w-'/>
                     </div>
+                </div>
+            </div>
+        </main>
+
+        <main className='container mx-auto flex justify-center items-center gap-0'>
+            <div className=""></div>
+            <div className='bg-[#F58A07] w-full'>
+                <h2 className='text-[#FFFFFF] text-[48px] font-600 leading-[56px] max-w-[532px] pt-32 pb-10 pl-32 mr-75'>Energy of a start-up combined with 30 years of experience.</h2>
+                <button className='bg-white text-[#f58a07] font-[700] py-3 px-6 rounded-[31px] ml-32 mb-32'>See Job Vacancies</button>
+            </div>
+        </main>
+
+        <main className='container mx-auto py-32 flex flex-col-reverse justify-center items-center gap-8 md:grid md:grid-cols-2'>
+            <div className='text-center md:text-start'>
+                <h2 className='text-[#0D1317] text-[48px] font-[600] leading-[56px]'>Finsweet was a dream to work with</h2>
+                <p className='text-[#5B5B5B] text-lg font-[500] py-6'>Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel. Pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus eleifend nec felis vel auctor.</p>
+                <div className='flex gap-4 justify-center text-center md:text-start'>
+                    <Image src={homepage15} alt='rasm bor' /> 
+                    <span>
+                        <h3 className='text-[#063255] text-2xl font-[500]'>Chikelu Leno</h3>
+                        <p className='text-[#F58A07] text-lg font-[500]'>CEO at MazeAI</p>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <Image src={homepage14} alt='rasm bor' />
+            </div>
+        </main>
+
+        <main className='bg-[#DCEAF5]'>
+            <div className='container mx-auto py-24'>
+                <h2 className='text-[#0D1317] text-[48px] font-[600] leading-[56px] text-center md:text-start'>Latest Blog & News</h2>
+                <div className="flex flex-col justify-around items-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-14">
+                    {cardData.map((item, index) => (
+                      <Card key={index} {...item} />
+                    ))}
                 </div>
             </div>
         </main>
