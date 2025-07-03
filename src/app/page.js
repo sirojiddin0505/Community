@@ -16,7 +16,7 @@ import { cardData } from '@/components/data/data'
 
 const Home = () => {
   return (
-    <section>
+    <section className=''>
         <main className='bg-[#DCEAF5]'>
             <div className='container mx-auto flex flex-col-reverse justify-between lg:grid lg:grid-cols-2 gap-2 pt-12'>
                 <div className='text-center lg:text-start px-2 lg:w-[500px]'>
@@ -99,7 +99,7 @@ const Home = () => {
 
         <main className='bg-[#EDF7FF]'>
             <div className='container mx-auto '>
-                <span className='flex gap-6 py-12'>
+                <span className='w-[350px] md:w-[450px] flex flex-col justify-center items-center md:grid md:grid-cols-2 gap-6 py-12'>
                     <button className='bg-[#EDF7FF] py-2 px-6 rounded-[31px] font-[600] text-[#0632554D] border border-[#A8BCCC] cursor-pointer hover:border-white hover:bg-[white] hover:text-[#F58A07]'>Business Strategy</button>
                     <button className='bg-[#EDF7FF] py-2 px-6 rounded-[31px] font-[600] text-[#0632554D] border border-[#A8BCCC] cursor-pointer hover:border-white hover:bg-[white] hover:text-[#F58A07]'>Digitalization</button>
                     <button className='bg-[#EDF7FF] py-2 px-6 rounded-[31px] font-[600] text-[#0632554D] border border-[#A8BCCC] cursor-pointer hover:border-white hover:bg-[white] hover:text-[#F58A07]'>Risk assessment</button>
